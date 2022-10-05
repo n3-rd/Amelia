@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app" class="hidden text-[#181818] overflow-x-hidden">
+      <div class="header flex flex-row justify-between items-center px-12 py-5 fixed w-full z-[99]">
+        <div class="header-title font-semibold text-5xl">A.</div>
+        <div class="header-links flex justify-around w-[50vw] md:w-[20vw] font-bold">
+          <div><a href="#">Home</a></div>
+          <div><a href="#gallery">Gallery</a></div>
+          <div><a href="#merch">Merch</a></div>
+        </div>
+      </div>
+      <div class="main-screen min-h-screen w-screen flex justify-center items-center border-b-2 border-b-black select-none">
+        <div class="main-text-container w-screen h-[80vh] flex justify-center items-center">
+          <div id="main-text" class="main-text font-black text-[25vw] text-center absolute z-30 md:mix-blend-color">AMELIA</div>
+        </div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+          <div class="main-image-container h-[23rem] w-[20rem] rellax">
+            <div class="main-image__inner w-full h-full bg-[url(/img/mauricio-leduc-NrasF1IPOuQ-unsplash.jpg)] bg-center bg-cover"></div>
+          </div>
+          </div>
+      </div>
+
+      <div class="desc h-screen w-screen flex flex-col justify-center items-center bg-[#ececec] text-6xl text-center px-16">
+        <p>We are <span class="underline cursor-pointer hover:text-black"> AMELIA </span></p>
+        <p class="py-2">A <span class="font-bold">photography</span> studio based in <span class="font-bold">London</span> and <span class="font-bold">New York</span>.</p>
+      </div>
+
+      <div class="gallery w-screen bg-[#ececec] pb-7" id="gallery">
+        <div class="gap-8 columns-3">
+          <img class="w-full aspect-auto mb-6" src="/img/1.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/2.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/3.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/4.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/5.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/6.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/7.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/8.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/9.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/10.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/11.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/12.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/13.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/14.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/15.jpg" />
+          <img class="w-full aspect-auto mb-6" src="/img/16.jpg" />
+        </div>
+      </div>
+
+      <div class="story py-20 md:py-28">
+        <div class="text-center text-4xl font-bold">Our Story</div>
+
+        <div class="py-20 text-4xl md:text-6xl font-normal text-center">
+          Let Us <br>
+          <div class="italic font-bold">Enlighten You!</div>
+        </div>
+
+
+        <div class="flex flex-col justify-center items-center h-[80vh] w-screen">
+        <div class="story-button border-2 border-black my-7 px-8 py-5 rounded-full cursor-pointer
+        hover:bg-black hover:text-white
+        ">View Our Story</div>
+          <div class="w-[80vw] h-full mx-20 bg-[url(/img/12.jpg)] bg-center bg-cover">
+        </div>
+
+        </div>
+      </div>
+
+      <div class="process py-20 md:py-28 bg-[#FEF7F8]">
+        <div class="text-center text-4xl font-bold">Our Processes</div>
+
+        <div class="py-20 text-4xl md:text-6xl font-normal text-center">
+          Let Us <br>
+          <div class="italic font-bold">Take You In!</div>
+        </div>
+
+
+        <div class="flex flex-col justify-center items-center h-[80vh] w-screen">
+        <div class="story-button border-2 border-black my-7 px-8 py-5 rounded-full cursor-pointer
+        hover:bg-black hover:text-white
+        ">Beauty + Moment</div>
+          <div class="w-[80vw] h-full mx-20 bg-[url(/img/8.jpg)] bg-center bg-cover">
+        </div>
+
+        </div>
+      </div>
+
+      <div class="merch py-10 bg-[#FEF7F8]" id="merch">
+        <div class="py-20 text-4xl md:text-6xl font-normal text-center">
+          Buy <br>
+          <div class="italic font-bold">Our Merchandise!</div>
+        </div>
+
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-3">
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/3.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/4.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/5.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/6.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/7.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/8.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/9.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/10.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/11.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/12.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/13.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+          <div class="grid-item h-[11rem] w-full overflow-hidden">
+            <div class="w-full h-full cursor-pointer bg-[url(/img/14.jpg)] bg-center bg-cover hover:scale-[1.2] ease-out duration-300"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prologue py-10 bg-[#FEF7F8]">
+        <div class="text-center text-3xl md:text-6xl md:px-36 px-10">
+          <p>We are <span class="underline font-bold cursor-pointer"> AMELIA </span></p>
+          <p>We Provide you with the best <span class="italic font-bold">Photography</span> services Possible.</p>
+          <p>Our core values are <span class="italic font-bold">Illuminated</span> by our experience in getting the best <span class="italic">Shots</span> for you!</p>
+        </div>
+        <div class="flex flex-col justify-center items-center w-screen py-16">
+          <div class="story-button border-2 border-black my-7 px-8 py-5 rounded-full cursor-pointer
+          hover:bg-black hover:text-white
+          ">Book Us!</div>
+          </div>
+
+          </div>
+
+<div class="mail bg-[#FEF7F8] py-8">
+  <div class="pl-4 md:pl-16 py-4 text-2xl">
+    For latest updates and news, subscribe to our mailing list!
+  </div>
+  <div class="flex w-full justify-center md:justify-around">
+    <div class="input w-[55%] md:w-[75%]">
+      <input type="email" name="email" id="" class="bg-transparent border-2 border-black rounded-full w-full px-4 py-5">
+    </div>
+    <div class="submit-input w-[45%] md:w-[15%] text-sm">
+      <div class="button bg-[#181818] text-[#FEF7F8] font-black text-center rounded-full py-5 cursor-pointer
+      hover:bg-[#FEF7F8] hover:text-[#181818] hover:border-2 hover:border-[#181818]
+      ">SUBMIT</div>
+    </div>
+  </div>
+</div>
+
+<div class="copyright bg-[#FEF7F8]">
+<div class="flex justify-between px-6 text-sm md:text-2xl font-semibold">
+  <div>©AMELIA 2022 by <a href="https://n3-rd.github.io" class="text-blue-500">N3RD</a></div>
+  <div>All rights reserved.</div>
+</div>
+</div>
+
+        </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
